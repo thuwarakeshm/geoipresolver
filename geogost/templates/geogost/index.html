@@ -1,0 +1,22 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+
+<body>
+    {% if local %}
+      <h1>Asian Site</h1>
+    {% else %}
+      <h1>Global Site</h1>
+    {% endif %}
+    
+    <a href="{% url 'link' %}">Go to Link</a><br>
+
+    <a href="/?remote=">Switch to Remote</a>
+</body>
+
+</html>
